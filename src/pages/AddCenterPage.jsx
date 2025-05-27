@@ -17,55 +17,63 @@ const AddProductPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/products", formData, {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      });
+      await axios.post(
+        "https://find-my-future-backend.onrender.com/api/products",
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
       alert("Product added!");
     } catch (error) {
-      console.error("Error adding product:", error); // Log detailed errors
+      console.error("Error adding product:", error);
       alert("Failed to add product.");
     }
   };
 
   return (
     <>
-    <div><Navbar/></div>
-    <div className="p-4 max-w-md mx-auto">
-      <h1 className="text-xl font-bold mb-4">Add Product</h1>
-      <form onSubmit={handleSubmit} className="flex flex-col gap-3">
-        <input
-          className="p-2 border rounded"
-          name="title"
-          placeholder="Title"
-          onChange={handleChange}
-        />
-        <textarea
-          className="p-2 border rounded"
-          name="description"
-          placeholder="Description"
-          onChange={handleChange}
-        />
-        <input
-          className="p-2 border rounded"
-          name="price"
-          placeholder="Price"
-          type="number"
-          onChange={handleChange}
-        />
-        <input
-          className="p-2 border rounded"
-          name="imageUrl"
-          placeholder="Image URL"
-          onChange={handleChange}
-        />
-        <button className="bg-blue-600 text-white py-2 rounded" type="submit">
-          Submit
-        </button>
-      </form>
-    </div>
-    <div><Footeer/></div>
+      <div>
+        <Navbar />
+      </div>
+      <div className="p-4 max-w-md mx-auto">
+        <h1 className="text-xl font-bold mb-4">Add Product</h1>
+        <form onSubmit={handleSubmit} className="flex flex-col gap-3">
+          <input
+            className="p-2 border rounded"
+            name="title"
+            placeholder="Title"
+            onChange={handleChange}
+          />
+          <textarea
+            className="p-2 border rounded"
+            name="description"
+            placeholder="Description"
+            onChange={handleChange}
+          />
+          <input
+            className="p-2 border rounded"
+            name="price"
+            placeholder="Price"
+            type="number"
+            onChange={handleChange}
+          />
+          <input
+            className="p-2 border rounded"
+            name="imageUrl"
+            placeholder="Image URL"
+            onChange={handleChange}
+          />
+          <button className="bg-blue-600 text-white py-2 rounded" type="submit">
+            Submit
+          </button>
+        </form>
+      </div>
+      <div>
+        <Footeer />
+      </div>
     </>
   );
 };

@@ -22,7 +22,7 @@ const BecomeTeacherPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/teachers", form);
+      await axios.post(""https://find-my-future-backend.onrender.com/api/teachers", form);
       alert("Teacher registered!");
       setForm({
         name: "",

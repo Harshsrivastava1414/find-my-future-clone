@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-import tutionImage from "../utils/1745926807_Blog_banner.webp";
-import tutionImage2 from "..src/utils/1745837785_website.webp"
+import tutionImage from "../src/utils/1745926807_Blog_banner.webp";
+import tutionImage2 from "../src/utils/1745837785_website.webp"
 const blogs = [
   {
     title:

@@ -17,7 +17,7 @@ const AddCoursePage = () => {
   const handleSubmit1 = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(" "https://find-my-future-backend.onrender.com/api/courses", formDataB, {
+      await axios.post("https://find-my-future-backend.onrender.com/api/courses", formDataB, {
         headers: {
           "Content-Type": "application/json",
         },

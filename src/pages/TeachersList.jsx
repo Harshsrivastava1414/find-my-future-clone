@@ -11,7 +11,7 @@ const TeachersPage = () => {
 
   useEffect(() => {
     axios
-      .get(""https://find-my-future-backend.onrender.com/api/teachers")
+      .get("https://find-my-future-backend.onrender.com/api/teachers")
       .then((res) => setTeachers(res.data))
       .catch((err) => console.error(err));
   }, []);

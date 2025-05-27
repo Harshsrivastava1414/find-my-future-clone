@@ -13,7 +13,7 @@ const CoursesPage = () => {
 
   useEffect(() => {
     axios
-      .get(""https://find-my-future-backend.onrender.com/api/courses")
+      .get("https://find-my-future-backend.onrender.com/api/courses")
       .then((res) => setCourses(res.data));
   }, []);
 

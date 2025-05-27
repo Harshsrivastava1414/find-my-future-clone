@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import tutionImage from "../utils/1745475471_Tuition_in_Noida.webp"
 
 const blogs = [
   {
@@ -8,7 +9,7 @@ const blogs = [
     imageAlt: "THE COMPLETE GUIDE!!",
     date: "2025-04-29",
     author: "FMT",
-    imageUrl: "/src/utils/1745475471_Tuition_in_Noida.webp", // ✅ public path
+    imageUrl: tutionImage, // ✅ public path
   },
   {
     title: "The Ultimate Guide to Online Home Tuition in Noida: Benefits, Features and Selection Tips.",

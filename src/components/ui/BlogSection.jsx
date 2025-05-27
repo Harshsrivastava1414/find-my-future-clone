@@ -1,26 +1,29 @@
 import React from "react";
 import { motion } from "framer-motion";
-import tutionImage from "../utils/1745475471_Tuition_in_Noida.webp"
-
+import tutionImage from "../utils/1745926807_Blog_banner.webp";
+import tutionImage2 from "..src/utils/1745837785_website.webp"
 const blogs = [
   {
-    title: "Transforming Education: The Complete Guide to Home Tuition in Noida.",
+    title:
+      "Transforming Education: The Complete Guide to Home Tuition in Noida.",
     subtitle: "HOME TUITION IN NOIDA",
     imageAlt: "THE COMPLETE GUIDE!!",
     date: "2025-04-29",
     author: "FMT",
-    imageUrl: tutionImage, // ✅ public path
+    imageUrl: tutionImage,
   },
   {
-    title: "The Ultimate Guide to Online Home Tuition in Noida: Benefits, Features and Selection Tips.",
+    title:
+      "The Ultimate Guide to Online Home Tuition in Noida: Benefits, Features and Selection Tips.",
     subtitle: "ONLINE HOME TUITION IN NOIDA",
     imageAlt: "THE ULTIMATE GUIDE",
     date: "2025-04-28",
     author: "FMT",
-   imageUrl: "/src/utils/1745475471_Tuition_in_Noida.webp",
+    imageUrl: tutionImage2,
   },
   {
-    title: "Choosing Between Tuition Centres and Home Tuition in Noida: A Complete Guide",
+    title:
+      "Choosing Between Tuition Centres and Home Tuition in Noida: A Complete Guide",
     subtitle: "PERSONALIZED LEARNING",
     imageAlt: "AT YOUR DOORSTEP",
     date: "2025-04-24",
@@ -28,7 +31,6 @@ const blogs = [
     imageUrl: "/src/utils/1745475471_Tuition_in_Noida.webp",
   },
 ];
-
 
 export function BlogSection() {
   return (

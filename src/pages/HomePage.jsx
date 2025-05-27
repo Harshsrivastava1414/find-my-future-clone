@@ -7,13 +7,22 @@ import { BlogSection } from "../components/ui/BlogSection";
 import { Navbar } from "../components/Navbar";
 import { Footeer } from "../components/Footeer";
 // import {MiniChat} from "./MiniChat";
-
+import doubtImg from "../utils/havedoubt.png";
+import confusedImg from "../utils/confused.png";
+import searchImg from "../utils/search.png";
+import solutionImg from "../utils/solution.png";
 
 export default function HomePage()
  {
   const [subject, setSubject] = useState("in English");
   const navigate = useNavigate();
 
+  const items = [
+  { text: "Have a Doubt !!", image: doubtImg },
+  { text: "Confused !!", image: confusedImg },
+  { text: "Searching ....", image: searchImg },
+  { text: "Get the Solution on FMT", image: solutionImg },
+];
   const subjects = useMemo(
     () => [
       "in English",
@@ -278,28 +287,20 @@ export default function HomePage()
           </div>
           {/* // image grid section */}
           <div className="grid grid-cols-2 gap-4 mb-6">
-            {[
-              { text: "Have a Doubt !!", image: "src/utils/havedoubt.png" },
-              { text: "Confused !!", image: "src/utils/confused.png" },
-              { text: "Searching ....", image: "src/utils/search.png" },
-              {
-                text: "Get the Solution on FMT",
-                image: "src/utils/solution.png",
-              },
-            ].map((item, index) => (
-              <div
-                key={index}
-                className="bg-white p-4 rounded shadow text-center text-sm"
-              >
-                <img
-                  src={item.image}
-                  alt={item.text}
-                  className="w-16 h-16 mx-auto mb-2 object-contain"
-                />
-                <p>{item.text}</p>
-              </div>
-            ))}
-          </div>
+  {items.map((item, index) => (
+    <div
+      key={index}
+      className="bg-white p-4 rounded shadow text-center text-sm"
+    >
+      <img
+        src={item.image}
+        alt={item.text}
+        className="w-16 h-16 mx-auto mb-2 object-contain"
+      />
+      <p>{item.text}</p>
+    </div>
+  ))}
+</div>
           <div className="grid grid-cols-2 sm:grid-cols-4 text-center text-sm gap-6 mb-10">
             <div>
               <p className="text-orange-700 font-bold text-lg">100K+</p>

@@ -1,7 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import tutionImage from "../src/utils/1745926807_Blog_banner.webp";
-import tutionImage2 from "../src/utils/1745837785_website.webp"
+import tutionImageB from "../src/utils/1745837785_website.webp"
+import tutionImageC from "../src/utils/1745475471_Tuition_in_Noida.webp"
 const blogs = [
   {
     title:
@@ -19,7 +20,7 @@ const blogs = [
     imageAlt: "THE ULTIMATE GUIDE",
     date: "2025-04-28",
     author: "FMT",
-    imageUrl: tutionImage2,
+    imageUrl: tutionImageB,
   },
   {
     title:
@@ -28,7 +29,7 @@ const blogs = [
     imageAlt: "AT YOUR DOORSTEP",
     date: "2025-04-24",
     author: "FMT",
-    imageUrl: "/src/utils/1745475471_Tuition_in_Noida.webp",
+    imageUrl: tutionImageC,
   },
 ];
 

@@ -1,7 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import tutionImage from "../utils/1745926807_Blog_banner.webp";
-import tutionImage2 from "..src/utils/1745837785_website.webp"
 const blogs = [
   {
     title:
@@ -10,7 +8,7 @@ const blogs = [
     imageAlt: "THE COMPLETE GUIDE!!",
     date: "2025-04-29",
     author: "FMT",
-    imageUrl: tutionImage,
+    imageUrl: "/public/1745475471_Tuition_in_Noida.webp", // Updated path
   },
   {
     title:
@@ -19,7 +17,7 @@ const blogs = [
     imageAlt: "THE ULTIMATE GUIDE",
     date: "2025-04-28",
     author: "FMT",
-    imageUrl: tutionImage2,
+    imageUrl: "/images/1745837785_website.webp", // Updated path
   },
   {
     title:
@@ -28,9 +26,10 @@ const blogs = [
     imageAlt: "AT YOUR DOORSTEP",
     date: "2025-04-24",
     author: "FMT",
-    imageUrl: "/src/utils/1745475471_Tuition_in_Noida.webp",
+    imageUrl: "/images/1745475471_Tuition_in_Noida.webp", // Updated path
   },
 ];
+// No need for import tutionImage from "../utils/..." anymore
 
 export function BlogSection() {
   return (

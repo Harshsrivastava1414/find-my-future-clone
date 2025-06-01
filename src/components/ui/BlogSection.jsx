@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 const blogs = [
-  {
+ {
     title:
       "Transforming Education: The Complete Guide to Home Tuition in Noida.",
     subtitle: "HOME TUITION IN NOIDA",

@@ -168,7 +168,7 @@ export default function HomePage()
 
           <div className="mt-10 flex justify-center">
             <img
-              src="/src/utils/onlineclass.png"
+              src="/public/onlineclass.png"
               alt="Online Class"
               className="max-w-full h-auto"
             />

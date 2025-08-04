@@ -24,7 +24,7 @@
             <Button
               variant="outline"
               className="text-orange-500 border-orange-500 rounded-full"
-              onClick={() => navigate("/AddCoursePage")}
+              onClick={() => navigate("/src/pages/AddCoursePage.jsx")}
             >
               Add Course
             </Button>

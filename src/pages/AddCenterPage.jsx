@@ -28,8 +28,8 @@ const AddProductPage = () => {
       );
       alert("Product added!");
     } catch (error) {
-      console.error("Error adding product:", error);
-      alert("Failed to add product.");
+      console.error("Error adding center:", error);
+      alert("Failed to add center.");
     }
   };
 

@@ -39,7 +39,7 @@ const AddProductPage = () => {
         <Navbar />
       </div>
       <div className="p-4 max-w-md mx-auto">
-        <h1 className="text-xl font-bold mb-4">Add Product</h1>
+        <h1 className="text-xl font-bold mb-4">Add Coaching Center</h1>
         <form onSubmit={handleSubmit} className="flex flex-col gap-3">
           <input
             className="p-2 border rounded"
@@ -56,7 +56,7 @@ const AddProductPage = () => {
           <input
             className="p-2 border rounded"
             name="price"
-            placeholder="Price"
+            placeholder="Fees"
             type="number"
             onChange={handleChange}
           />

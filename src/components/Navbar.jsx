@@ -24,9 +24,9 @@
             <Button
               variant="outline"
               className="text-orange-500 border-orange-500 rounded-full"
-              onClick={() => navigate("/courses")}
+              onClick={() => navigate("/AddCoursePage")}
             >
-              1:1 CLASSES
+              Add Course
             </Button>
             <Button variant="ghost" onClick={() => navigate("/centers")}>
               Centers
@@ -34,6 +34,7 @@
             <Button variant="ghost" onClick={() => navigate("/teacherList")}>
               Teachers
             </Button>
+        
             <Button variant="ghost" onClick={() => navigate("/teacher")}>
               Become a Teacher
             </Button>

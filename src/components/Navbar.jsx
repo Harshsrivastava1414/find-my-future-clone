@@ -31,6 +31,9 @@
             <Button variant="ghost" onClick={() => navigate("/centers")}>
               Centers
             </Button>
+           <Button variant="ghost" onClick={() => navigate("/addcenter")}>
+              Add Centers
+            </Button>
             <Button variant="ghost" onClick={() => navigate("/teacherList")}>
               Teachers
             </Button>
